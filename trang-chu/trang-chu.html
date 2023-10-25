@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="trang-chu.css">
+</head>    
+<body>
+    <div class="container">
+      <header>
+        <img id="logo" src="logo.jpg" alt="">
+      <nav class="navbar navbar-expand-md bg-color navbar-light sticky-top">
+        <div class="menu-container">
+            <span class="menu-icon" onclick="toggleMenu()">&#9776;
+                <span class="menu-text">Danh mục</span>
+            </span>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sachtiengviet">Sách Tiếng Việt</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#sachtienganh">Sách Tiếng Anh</a></li>
+          <li class="nav-item"><a class="nav-link" href="#truyentranh">Truyện Tranh</a></li>
+      </ul>
+          <div class="navbar-user"> 
+           <input type="text" class="search-bar" placeholder="Tìm kiếm...">
+           <a href="#"><i class="fas fa-search" ></i></a>
+           <a href="#"><i class="fas fa-user"></i></a>
+           <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+    </nav>
+    </header>
+      <nav class="navbar"> 
+      <div id="demo" class="carousel slide inline-images" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+          <div class="carousel-item active">
+            <img src="bangtruyen/anh1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="bangtruyen/anh2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="bangtruyen/anh3.jpg" class="d-block w-100">
+          </div>
+        </div> 
+      </div>
+      <div class="container1">
+        <div>
+          <img id="img" src="bangtruyen/anh2.jpg" alt="" class="responsive-image">
+        </div>
+        <div>
+          <img id="img2" src="bangtruyen/anh3.jpg" alt="" class="responsive-image">
+        </div>
+      </div>
+      </nav>
+      <div class="wp-list">
+        <h2>
+          <a id="sachtiengviet">SÁCH TIẾNG VIỆT<br></a>
+        </h2>
+        <hr>
+        <nav class="ds-nav">
+        <button class="tablink" data-section="kinhte" onclick="openPage('kinhte', this)">Kinh Tế</button>
+        <button class="tablink" data-section="vanhoa" onclick="openPage('vanhoa', this)">Văn Hóa</button>
+        <button class="tablink" data-section="thieunhi" onclick="openPage('thieunhi', this)">Thiếu Nhi</button>
+        <button class="tablink" data-section="doisong" onclick="openPage('doisong', this,)">Đời Sống</button>
+        </nav>
+        <div id="kinhte" class="tabcontent">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach1.jpg" alt="">
+                            <div class="name">Nghĩ Giàu & Làm Giàu</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach1.jpg" alt="">
+                            <div class="name">Nghĩ Giàu & Làm Giàu</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach1.jpg" alt="">
+                            <div class="name">Nghĩ Giàu & Làm Giàu</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach1.jpg" alt="">
+                            <div class="name">Nghĩ Giàu & Làm Giàu</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach1.jpg" alt="">
+                            <div class="name">Nghĩ Giàu & Làm Giàu</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach1.jpg" alt="">
+                            <div class="name">Nghĩ Giàu & Làm Giàu</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+            </div>
+            <div class="xemthem moving-text">
+              <a href="/mua-sach/sach-tieng-viet/sach-tieng-viet.html">Xem Thêm <span>&#10148;</span></a>
+            </div>
+        </div>
+        
+        <div id="vanhoa" class="tabcontent">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach2.jpg" alt="">
+                            <div class="name">Việt Nam Danh Tác - Nam Cao</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach2.jpg" alt="">
+                            <div class="name">Việt Nam Danh Tác - Nam Cao</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach2.jpg" alt="">
+                            <div class="name">Việt Nam Danh Tác - Nam Cao</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach2.jpg" alt="">
+                            <div class="name">Việt Nam Danh Tác - Nam Cao</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach2.jpg" alt="">
+                            <div class="name">Việt Nam Danh Tác - Nam Cao</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach2.jpg" alt="">
+                            <div class="name">Việt Nam Danh Tác - Nam Cao</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+              </div>
+              <div class="xemthem moving-text">
+                <a href="/mua-sach/sach-tieng-viet/sach-tieng-viet.html">Xem Thêm <span>&#10148;</span></a>
+              </div>
+        </div>
+        
+        <div id="thieunhi" class="tabcontent">
+         <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach3.jpg" alt="">
+                            <div class="name">Miền Xanh Thẳm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach3.jpg" alt="">
+                            <div class="name">Miền Xanh Thẳm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach3.jpg" alt="">
+                            <div class="name">Miền Xanh Thẳm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach3.jpg" alt="">
+                            <div class="name">Miền Xanh Thẳm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach3.jpg" alt="">
+                            <div class="name">Miền Xanh Thẳm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach3.jpg" alt="">
+                            <div class="name">Miền Xanh Thẳm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                </div>
+                <div class="xemthem moving-text">
+                  <a href="/mua-sach/sach-tieng-viet/sach-tieng-viet.html">Xem Thêm <span>&#10148;</span></a>
+                </div>
+        </div>
+        
+        <div id="doisong" class="tabcontent">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach4.jpg" alt="">
+                            <div class="name">Đắc Nhân Tâm - Bìa Cứng</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach4.jpg" alt="">
+                            <div class="name">Đắc Nhân Tâm - Bìa Cứng</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach4.jpg" alt="">
+                            <div class="name">Đắc Nhân Tâm - Bìa Cứng</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach4.jpg" alt="">
+                            <div class="name">Đắc Nhân Tâm - Bìa Cứng</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach4.jpg" alt="">
+                            <div class="name">Đắc Nhân Tâm - Bìa Cứng</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-viet/sach4.jpg" alt="">
+                            <div class="name">Đắc Nhân Tâm - Bìa Cứng</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                    </div>
+                    <div class="xemthem moving-text">
+                      <a href="/mua-sach/sach-tieng-viet/sach-tieng-viet.html">Xem Thêm <span>&#10148;</span></a>
+                    </div>
+              </div>
+      </div>
+      <div class="wp-list">
+        <h2>
+          <a id="sachtienganh">SÁCH TIẾNG ANH<br></a>
+        </h2>
+        <hr>
+        <nav class="ds-nav">
+          <button class="tablink" data-section="xuhuong" onclick="openPage1('xuhuong', this)">Xu Hướng</button>
+          <button class="tablink" data-section="giaotrinh" onclick="openPage1('giaotrinh', this)">Giáo Trình</button>
+          <button class="tablink" data-section="thieunhi1" onclick="openPage1('thieunhi1', this)">Thiếu Nhi</button>
+          <button class="tablink" data-section="tieuthuyet" onclick="openPage1('tieuthuyet', this,)">Tiểu Thuyết</button>
+          </nav>
+        <div id="xuhuong" class="tabcontent1">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach1.jpg" alt="">
+                            <div class="name">The Art of Thinking Clearly</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach1.jpg" alt="">
+                            <div class="name">The Art of Thinking Clearly</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach1.jpg" alt="">
+                            <div class="name">The Art of Thinking Clearly</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach1.jpg" alt="">
+                            <div class="name">The Art of Thinking Clearly</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach1.jpg" alt="">
+                            <div class="name">The Art of Thinking Clearly</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach1.jpg" alt="">
+                            <div class="name">The Art of Thinking Clearly</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                </div>
+                <div class="xemthem moving-text">
+                  <a href="/mua-sach/sach-tieng-anh/sach-tieng-anh.html">Xem Thêm <span>&#10148;</span></a>
+                </div>
+        </div>
+        
+        <div id="giaotrinh" class="tabcontent1">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach2.jpg" alt="">
+                            <div class="name">English Grammar in Use Book w Ans</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach2.jpg" alt="">
+                            <div class="name">English Grammar in Use Book w Ans</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach2.jpg" alt="">
+                            <div class="name">English Grammar in Use Book w Ans</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach2.jpg" alt="">
+                            <div class="name">English Grammar in Use Book w Ans</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach2.jpg" alt="">
+                            <div class="name">English Grammar in Use Book w Ans</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach2.jpg" alt="">
+                            <div class="name">English Grammar in Use Book w Ans</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/sach-tieng-anh/sach-tieng-anh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div> 
+        </div>
+        
+        <div id="thieunhi1" class="tabcontent1">
+         <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach3.jpg" alt="">
+                            <div class="name">Little Friends: Trick Or Treat</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach3.jpg" alt="">
+                            <div class="name">Little Friends: Trick Or Treat</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach3.jpg" alt="">
+                            <div class="name">Little Friends: Trick Or Treat</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach3.jpg" alt="">
+                            <div class="name">Little Friends: Trick Or Treat</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach3.jpg" alt="">
+                            <div class="name">Little Friends: Trick Or Treat</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach3.jpg" alt="">
+                            <div class="name">Little Friends: Trick Or Treat</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/sach-tieng-anh/sach-tieng-anh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div>
+        </div>
+        
+        <div id="tieuthuyet" class="tabcontent1">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach4.jpg" alt="">
+                            <div class="name">Harry Potter And The Philosopher's Stone</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach4.jpg" alt="">
+                            <div class="name">Harry Potter And The Philosopher's Stone</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach4.jpg" alt="">
+                            <div class="name">Harry Potter And The Philosopher's Stone</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach4.jpg" alt="">
+                            <div class="name">Harry Potter And The Philosopher's Stone</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach4.jpg" alt="">
+                            <div class="name">Harry Potter And The Philosopher's Stone</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/sach-tieng-anh/sach4.jpg" alt="">
+                            <div class="name">Harry Potter And The Philosopher's Stone</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/sach-tieng-anh/sach-tieng-anh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div>
+        </div>
+      </div>
+      <div class="wp-list">
+        <h2>
+          <a id="truyentranh">TRUYỆN TRANH<br></a>
+        </h2>
+        <hr>
+        <nav class="ds-nav">
+          <button class="tablink" data-section="vietnam"onclick="openPage2('vietnam', this)">Việt Nam</button>
+          <button class="tablink" data-section="nuocngoai"onclick="openPage2('nuocngoai', this)">Nước Ngoài</button>
+          <button class="tablink" data-section="botruyen"onclick="openPage2('botruyen', this)">Bộ Truyện</button>
+          <button class="tablink" data-section="luatuoi"onclick="openPage2('luatuoi', this,)">Lứa Tuổi</button>
+          </nav>
+        <div id="vietnam" class="tabcontent2">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach1.jpg" alt="">
+                            <div class="name">Thần Đồng Đất Việt 2 - Trí Nhớ Siêu Phàm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach1.jpg" alt="">
+                            <div class="name">Thần Đồng Đất Việt 2 - Trí Nhớ Siêu Phàm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach1.jpg" alt="">
+                            <div class="name">Thần Đồng Đất Việt 2 - Trí Nhớ Siêu Phàm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach1.jpg" alt="">
+                            <div class="name">Thần Đồng Đất Việt 2 - Trí Nhớ Siêu Phàm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach1.jpg" alt="">
+                            <div class="name">Thần Đồng Đất Việt 2 - Trí Nhớ Siêu Phàm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach1.jpg" alt="">
+                            <div class="name">Thần Đồng Đất Việt 2 - Trí Nhớ Siêu Phàm</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/truyen-tranh/truyen-tranh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div>
+        </div>
+        
+        <div id="nuocngoai" class="tabcontent2">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach2.jpg" alt="">
+                            <div class="name">One-Punch Man - Tập 23: Thật-Giả</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach2.jpg" alt="">
+                            <div class="name">One-Punch Man - Tập 23: Thật-Giả</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach2.jpg" alt="">
+                            <div class="name">One-Punch Man - Tập 23: Thật-Giả</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach2.jpg" alt="">
+                            <div class="name">One-Punch Man - Tập 23: Thật-Giả</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach2.jpg" alt="">
+                            <div class="name">One-Punch Man - Tập 23: Thật-Giả</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach2.jpg" alt="">
+                            <div class="name">One-Punch Man - Tập 23: Thật-Giả</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/truyen-tranh/truyen-tranh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div> 
+        </div>
+        
+        <div id="botruyen" class="tabcontent2">
+         <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach3.jpg" alt="">
+                            <div class="name">Premium Boxset Haikyu!! - Tập: 1 - 15</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach3.jpg" alt="">
+                            <div class="name">Premium Boxset Haikyu!! - Tập: 1 - 15</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach3.jpg" alt="">
+                            <div class="name">Premium Boxset Haikyu!! - Tập: 1 - 15</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach3.jpg" alt="">
+                            <div class="name">Premium Boxset Haikyu!! - Tập: 1 - 15</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach3.jpg" alt="">
+                            <div class="name">Premium Boxset Haikyu!! - Tập: 1 - 15</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach3.jpg" alt="">
+                            <div class="name">Premium Boxset Haikyu!! - Tập: 1 - 15</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/truyen-tranh/truyen-tranh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div>
+        </div>
+        
+        <div id="luatuoi" class="tabcontent2">
+          <div class="sp-list">
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach4.jpg" alt="">
+                            <div class="name">Spongebob Squarepants - Những Giấc Mơ Kem</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach4.jpg" alt="">
+                            <div class="name">Spongebob Squarepants - Những Giấc Mơ Kem</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach4.jpg" alt="">
+                            <div class="name">Spongebob Squarepants - Những Giấc Mơ Kem</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach4.jpg" alt="">
+                            <div class="name">Spongebob Squarepants - Những Giấc Mơ Kem</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach4.jpg" alt="">
+                            <div class="name">Spongebob Squarepants - Những Giấc Mơ Kem</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                            </div>
+                            <div class="item">
+                              <img src="anhsach/truyen-tranh/sach4.jpg" alt="">
+                            <div class="name">Spongebob Squarepants - Những Giấc Mơ Kem</div>
+                            <a href=""><div class="price">Mua Ngay</div></a>
+                          </div>
+                  </div>
+                  <div class="xemthem moving-text">
+                    <a href="/mua-sach/truyen-tranh/truyen-tranh.html">Xem Thêm <span>&#10148;</span></a>
+                  </div>
+        </div>
+      </div>
+     
+    <footer>
+      <div class="footer-container">
+          <section class="footer-section">
+           <h2> Về Chúng Tôi</h2><hr>
+              <ul>
+                  <li><a href="#">Giới Thiệu Về Nhà Sách</a></li>
+                  <li><a href="#">Hệ Thống Nhà Sách </a></li>
+                  <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                  <li><a href="#">Chính Sách Bán Hàng</a></li>
+              </address>
+          </section>
+
+          <section class="footer-section">
+              <h2>Hỗ Trợ Khách Hàng</h2><hr>
+              <ul>
+                  <li><a href="#">Tài Khoản</a></li>
+                  <li><a href="#">Các Câu Hỏi Thường Gặp</a></li>
+                  <li><a href="#">Chính Sách Đổi/Trả Hàng</a></li>
+                  <li><a href="#">Phương Thức Vận Chuyển</a></li>
+              </ul>
+          </section>
+
+          <section class="footer-section">
+                  <h2>Liên Hệ Với Chúng Tôi</h2><hr>
+              <address>
+                <ul>
+                  <li>Nhóm 9</li>
+                  <li>Phạm Trần Gia Huy - 221220858</li>
+                  <li>Trần Mạnh Tuấn - 221231037</li>
+                  <li>Đỗ Danh Tâm Anh - 221230731</li>
+                </ul>
+          </section>
+      </div>
+
+      <div class="copyright">
+          &copy; 2023 Trang Web Bán Hàng. Bảo lưu mọi quyền.
+      </div>
+  </footer>
+</div>
+<script src="trang-chu.js"></script>
+</body>  
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Ajax font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="\mua-sach\mua-sach.css">
+  <title>Sách Tiếng Anh</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img id="logo" src="/trang-chu/logo.jpg" alt="logo">
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-color navbar-light sticky-top">
+      <div class="menu-container">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;
+          <span class="menu-text">Danh mục</span>
+        </span>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/trang-chu/trang-chu.html">Trang Chủ</a></li>
+        <li class="nav-item"><a class="nav-link" href="\mua-sach\sach-tieng-viet\sach-tieng-viet.html">Sách
+            Tiếng Việt</a></li>
+        <li class="nav-item"><a class="nav-link" href="\mua-sach\sach-tieng-anh\sach-tieng-anh.html">Sách Tiếng Anh</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="\mua-sach\truyen-tranh\truyen-tranh.html">Truyện Tranh</a></li>
+      </ul>
+      <div class="navbar-user">
+        <input type="text" class="search-bar" placeholder="Tìm kiếm...">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <nav aria-label="breadcrumb" id="breadcrumbs_10">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="\trang-chu\trang-chu.html">Trang chủ</a></li>
+          <li class="breadcrumb-item active"><bdi>Sách Tiếng Anh</bdi></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <!-- Bo Loc San Pham-->
+          <div class="row">
+            <!-- Price range slider -->
+            <div class="col-12">
+              <div class="container mt-5">
+                <label for="priceRange" class="form-label">Giá:</label>
+                <input type="range" class="form-range" id="priceRange" min="0" max="200000" step="1" value="50000">
+                <input type="number" class="form-control" id="priceInput" min="0" max="200000" step="1" value="50000"
+                  placeholder="VND">
+              </div>
+              <script>
+                // JavaScript code to link the slider and manual input
+                const priceRange = document.getElementById('priceRange');
+                const priceInput = document.getElementById('priceInput');
+
+                priceRange.addEventListener('input', () => {
+                  priceInput.value = priceRange.value;
+                });
+
+                priceInput.addEventListener('input', () => {
+                  priceRange.value = priceInput.value;
+                });
+              </script>
+            </div>
+
+            <!-- Bo loc nha xuat ban -->
+            <div class="col-12">
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="product-filter">
+                      <div class="fixed-area" style="width: 275px; height: 300px; overflow-y: auto;">
+                        <table class="table table-striped table-hover table-responsive">
+                          <thead>
+                            <tr>
+                              <th>Nhà Xuất Bản</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <ul class="list-group" style="max-height: 20em; overflow-y: auto;">
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="publisher-checkbox-1"
+                                      data-publisher="Bantam">
+                                    <label class="form-check-label" for="publisher-checkbox-1">Bantam</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="publisher-checkbox-1"
+                                      data-publisher="Bantam">
+                                    <label class="form-check-label" for="publisher-checkbox-1">Bantam</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="publisher-checkbox-1"
+                                      data-publisher="Bantam">
+                                    <label class="form-check-label" for="publisher-checkbox-1">Bantam</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="publisher-checkbox-1"
+                                      data-publisher="Bantam">
+                                    <label class="form-check-label" for="publisher-checkbox-1">Bantam</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="publisher-checkbox-1"
+                                      data-publisher="Bantam">
+                                    <label class="form-check-label" for="publisher-checkbox-1">Bantam</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="publisher-checkbox-1"
+                                      data-publisher="Bantam">
+                                    <label class="form-check-label" for="publisher-checkbox-1">Bantam</label>
+                                  </li>
+                                  
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <button type="button" class="btn btn-primary" id="publisher-filter-button">Filter</button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="publisher-product-grid">
+                      <div class="row">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                const publisherCheckboxes = document.querySelectorAll('#publisher-checkbox');
+                const publisherFilterButton = document.querySelector('#publisher-filter-button');
+                const publisherProductGrid = document.querySelector('.publisher-product-grid');
+
+                publisherFilterButton.addEventListener('click', () => {
+                  // Get the list of selected publishers
+                  const selectedPublishers = [];
+                  publisherCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                      selectedPublishers.push(checkbox.getAttribute('data-publisher'));
+                    }
+                  });
+
+                  // Filter the products in the product grid
+                  filterProducts(selectedPublishers);
+                });
+
+                function filterProducts(selectedPublishers) {
+                  // Get all of the product items in the product grid
+                  const productItems = publisherProductGrid.querySelectorAll('.product-item');
+
+                  // Filter the product items based on the selected publishers
+                  productItems.forEach(productItem => {
+                    const publisher = productItem.getAttribute('data-publisher');
+
+                    if (selectedPublishers.includes(publisher)) {
+                      productItem.classList.remove('d-none');
+                    } else {
+                      productItem.classList.add('d-none');
+                    }
+                  });
+                }
+
+              </script>
+            </div>
+
+            <!-- Bo loc tac gia -->
+            <div class="col-12">
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="product-filter">
+                      <div class="fixed-area" style="width: 275px; height: 300px; overflow-y: auto;">
+                        <table class="table table-striped table-hover table-responsive">
+                          <thead>
+                            <tr>
+                              <th>Tác giả</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <ul class="list-group" style="max-height: 20em; overflow-y: auto;">
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="author-checkbox-1"
+                                      data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                                    <label class="form-check-label" for="author-checkbox-1">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="author-checkbox-1"
+                                      data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                                    <label class="form-check-label" for="author-checkbox-1">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="author-checkbox-1"
+                                      data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                                    <label class="form-check-label" for="author-checkbox-1">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="author-checkbox-1"
+                                      data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                                    <label class="form-check-label" for="author-checkbox-1">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="author-checkbox-1"
+                                      data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                                    <label class="form-check-label" for="author-checkbox-1">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</label>
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <input type="checkbox" class="form-check-input" id="author-checkbox-1"
+                                      data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                                    <label class="form-check-label" for="author-checkbox-1">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</label>
+                                  </li>
+
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <button type="button" class="btn btn-primary" id="author-filter-button">Filter</button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="author-product-grid">
+                      <div class="row">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                const authorCheckboxes = document.querySelectorAll('#author-checkbox');
+                const authorFilterButton = document.querySelector('#author-filter-button');
+                const authorProductGrid = document.querySelector('.author-product-grid');
+
+                authorFilterButton.addEventListener('click', () => {
+                  // Get the list of selected authors
+                  const selectedAuthors = [];
+                  authorCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                      selectedAuthors.push(checkbox.getAttribute('data-author'));
+                    }
+                  });
+
+                  // Filter the products in the product grid
+                  filterProducts(selectedAuthors);
+                });
+
+                function filterProducts(selectedAuthors) {
+                  // Get all of the product items in the product grid
+                  const productItems = productGrid.querySelectorAll('.product-item');
+
+                  // Filter the product items based on the selected authors
+                  productItems.forEach(productItem => {
+                    const author = productItem.getAttribute('data-author');
+
+                    if (selectedAuthors.includes(author)) {
+                      productItem.classList.remove('d-none');
+                    } else {
+                      productItem.classList.add('d-none');
+                    }
+                  });
+                }
+              </script>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- San Pham -->
+        <div class="col-9">
+          <h3>Sách Tiếng Anh</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" data-publisher="Bantam" data-author="Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty">
+                <img class="img-thumbnail" id="productImg" src="/mua-sach/sach-tieng-anh/diary-of-a-young-girl.jpg" alt="The Diary Of A Young Girl">
+                <div class="card-body">
+                  <h5 class="card-title">The Diary Of A Young Girl: The Definitive Edition</h5>
+                  <p class="card-text">Anne Frank, Otto M Frank, Mirjam Pressler, Susan Massotty</p>
+                  <p class="card-text">144,000 đ</p>
+                  <a href="/thong-tin-sach/the-diary-of-a-young-girl/the-diary-of-a-young-girl.html" class="btn btn-primary">Chọn Mua</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer>
+        <div class="footer-container">
+          <section class="footer-section">
+            <h2> Về Chúng Tôi</h2>
+            <hr>
+            <ul>
+              <li><a href="#">Giới Thiệu Về Nhà Sách</a></li>
+              <li><a href="#">Hệ Thống Nhà Sách </a></li>
+              <li><a href="#">Điều Khoản Sử Dụng</a></li>
+              <li><a href="#">Chính Sách Bán Hàng</a></li>
+              </address>
+          </section>
+
+          <section class="footer-section">
+            <h2>Hỗ Trợ Khách Hàng</h2>
+            <hr>
+            <ul>
+              <li><a href="#">Tài Khoản</a></li>
+              <li><a href="#">Các Câu Hỏi Thường Gặp</a></li>
+              <li><a href="#">Chính Sách Đổi/Trả Hàng</a></li>
+              <li><a href="#">Phương Thức Vận Chuyển</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-section">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <hr>
+            <address>
+              <ul>
+                <li>Nhóm 9</li>
+                <li>Phạm Trần Gia Huy - 221220858</li>
+                <li>Trần Mạnh Tuấn - 221231037</li>
+                <li>Đỗ Danh Tâm Anh - 221230731</li>
+              </ul>
+          </section>
+        </div>
+
+        <div class="copyright">
+          &copy; 2023 Trang Web Bán Hàng. Bảo lưu mọi quyền.
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>

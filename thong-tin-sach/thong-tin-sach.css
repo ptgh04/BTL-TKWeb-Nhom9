@@ -1,0 +1,351 @@
+.container {
+  font-family: "Barlow", Sans-serif;
+  background-color: #FCE5C5;
+}
+
+header {
+  background-color: #FCE5C5;
+  text-align: center;
+}
+
+#logo {
+  width: 150px;
+}
+
+.text-menu {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #00b8f1;
+}
+
+.bg-color {
+  background-color: #00b8f1;
+  font-size: 20px;
+}
+
+.item1 {
+  margin-top: 16px;
+  font-size: 40;
+  color: rgb(10, 10, 10);
+  /*text-align: ;
+  min-height: ;
+  line-height: ;*/
+  background: #fcfdfd;
+}
+
+.btn {
+  display: inline;
+  text-decoration: none;
+  background-color: #00b8f1;
+}
+
+.item2 {
+  margin-top: 10px;
+  font-size: 20;
+  color: rgb(10, 10, 10);
+  /*text-align: ;
+  min-height: ;
+  line-height: ;*/
+  background: #00b8f1;
+}
+
+.carousel {
+  width: 900px;
+  height: 400px;
+}
+
+.container1 {
+  float: right;
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+.responsive-image {
+  display: block;
+}
+
+.wp-list h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.wp-list h3 {
+  text-align: center;
+  font-size: 20px;
+  background-color: #00b8f1;
+  height: 41px;
+  padding: 8.7px;
+}
+
+.sp-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.xemthem {
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 10px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.moving-text {
+  position: relative;
+  animation: moveLeftRight 1s linear infinite;
+}
+
+.xemthem a {
+  color: red;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/*span{
+  content:;
+}*/
+.sp-list .item {
+  width: 195px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #333;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.sp-list .item a {
+  text-decoration: none;
+}
+
+.sp-list .item img {
+  display: block;
+  margin: 0px auto;
+  width: 140px;
+}
+
+.sp-list .item .name {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.sp-list .item .price {
+  text-align: center;
+  color: white;
+  background-color: #6aa84f;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.change-color {
+  background-color: #00b8f1;
+  color: white;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+
+.change-color:hover {
+  background-color: #f4bf22;
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #dadada;
+  ;
+  color: black;
+  padding: 0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 0px;
+  background-color: #FCE5C5;
+}
+
+.search-bar .search-button i {
+  font-size: 18px;
+}
+
+.menu-text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #00b8f1;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 100%;
+  }
+
+  .navbar-nav.active {
+    display: block;
+  }
+}
+
+.list-tab {
+  list-style: none;
+}
+
+.list-tab a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  padding: 0px;
+  border: none;
+  border-radius: 5px;
+  width: 230px;
+  margin-right: 2px;
+}
+
+.fas {
+  margin: 2px;
+}
+
+.navbar-user {
+  position: absolute;
+  right: 0;
+}
+
+.navbar-user a i {
+  color: black;
+}
+
+.list-tab {
+  display: none;
+}
+
+.dropdown:hover .list-tab {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+}
+
+.tablink {
+  background-color: #00b8f1;
+  color: white;
+  border: none;
+  padding: 0 6px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 0;
+}
+
+.tablink:hover {
+  background-color: #f4bf22;
+}
+
+.tabcontent:not(#kinhte) {
+  color: white;
+  height: 100%;
+  display: none;
+}
+
+.tabcontent1:not(#xuhuong) {
+  color: white;
+  height: 100%;
+  display: none;
+}
+
+.tabcontent2:not(#vietnam) {
+  color: white;
+  height: 100%;
+  display: none;
+}
+
+.ds-nav {
+  text-align: center;
+  background-color: #00b8f1;
+}

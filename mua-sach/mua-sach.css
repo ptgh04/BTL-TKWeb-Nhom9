@@ -1,0 +1,168 @@
+.btn {
+  background-color: #6aa84f;
+}
+
+#breadcrumbs_10 {
+  margin-top: 20px;
+}
+
+#breadcrumbs_10 .breadcrumb-item {
+  font-size: 14px;
+}
+
+#breadcrumbs_10 .breadcrumb-item:active {
+  font-weight: bold;
+}
+
+.container{
+  font-family:"Barlow", Sans-serif;
+  background-color: #FCE5C5;
+}
+header{
+ background-color:#FCE5C5;
+ text-align: center;
+}
+
+#logo{
+  width: 150px;
+}
+
+.bg-color {
+  background-color: #00b8f1;
+  font-size: 20px;
+}
+
+.container1 {
+  float: right;
+}
+
+/*---------------------- Thanh Dieu Huong -----------------*/
+.navbar {
+  margin-bottom: 10px;
+}
+
+.search-bar .search-button i {
+  font-size: 18px;
+}
+
+.menu-text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #00b8f1;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 100%;
+  }
+
+  .navbar-nav.active {
+    display: block;
+  }
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  padding: 0px;
+  border: none;
+  border-radius: 5px;
+  width: 230px;
+  margin-right: 2px;
+}
+
+.fas {
+  margin: 2px;
+}
+
+.navbar-user {
+  position: absolute;
+  right: 0;
+}
+
+.navbar-user a i {
+  color: black;
+}
+/*---------------------------------------*/
+
+/*----------------- Bo loc ----------------*/
+.product-filter .list-group-item label {
+  font-size: 0.85rem;
+}
+
+
+
+/*------------------- Footer ----------------*/
+footer {
+  background-color: #dadada;
+  ;
+  color: black;
+  padding: 0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 0px;
+  background-color: #f9cb9c;
+}
+/*----------------------------*/
